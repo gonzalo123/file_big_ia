@@ -1,4 +1,4 @@
-# Using Map-Reduce to Process large documents with AI Agents and Python
+# Using Map-Reduce to process large documents with AI Agents and Python
 
 We live in the era of Large Language Models (LLMs) with massive context windows. Claude 3.5 Sonnet offers 200k tokens, and Gemini 1.5 Pro goes up to 2 million. So, why do we still need to worry about document processing strategies? The answer is yes, we do. For example, AWS Bedrock has a strict limit of 4.5MB for documents, regardless of token count. That's means we can't just stuff file greater than 4.5MB into a prompt. Today we'll show you how I built a production-ready document processing agent that handles large files by implementing a **Map-Reduce** pattern using Python, **AWS Bedrock**, and **Strands Agents**.
 

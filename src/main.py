@@ -55,8 +55,7 @@ async def main():
     processor.add_listener(DocumentProcessorEventListener())
 
     async for chunk in processor.process([
-        # DocumentFile(path=BASE_DIR / "docs" / "x.xlsx", name="x.xlsx"),
-        DocumentFile(path=BASE_DIR / "docs" / "x.csv", name="x.csv"),
+        DocumentFile(path=BASE_DIR / "docs" / "progit.pdf", name="progit.pdf"),
     ], question):
         print(chunk, end="", flush=True)
 
