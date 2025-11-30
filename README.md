@@ -132,4 +132,4 @@ The `SYSTEM_PROMPT_SPARTAN` (injected above) explicitly forbids conversational f
 
 The project handles pdf and xlsx files. The rest of the file types are not processed and are given to the LLM as-is.
 
-With this architecture, we can process large files in a production environment. This allows us to easily plug in different interfaces—whether it's a CLI logger (as shown) or a WebSocket update for a frontend like Chainlit.
+With this architecture, we can process large files in a production environment. This allows us to easily plug in different interfaces, whether it's a CLI logger (as shown) or a WebSocket update for a UI frontend like Chainlit.
