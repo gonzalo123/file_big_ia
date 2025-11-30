@@ -14,9 +14,6 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-MAX_CONCURRENT_WORKERS = 5
-MODEL = Models.CLAUDE_45
-
 
 class DocumentProcessorEventListener(ProcessingEventListener):
     async def on_processing_start(self, file_name: str, total_chunks: int):
